@@ -15,46 +15,55 @@
             
     
             <h1>
-        <div class="Eggbox"> Welcome to the World Wide Web </div>
-        
+                <div class="Eggbox"> Welcome to the World Wide Web </div>
             </h1>
-                <div class="line_thing">
-             <svg style="width:100%; height:100%;">
-             <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+
+            <!-- Line graphics -->
+            <div class="line_thing">
+                <svg style="width:100%; height:100%;">
+                    <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
         
-             </svg>
-                </div>
-                <div class="line_thing2">
-            <svg  style="width:100%; height:100%;">
-            <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-            
-          </svg>
-                </div>
+                </svg>
+            </div>
+
+            <div class="line_thing2">
+                <svg  style="width:100%; height:100%;">
+                    <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+                </svg>
+            </div>
     
-    
+            <!-- TextContent -->
             <div class="Eggbox2">
-            This is an HTML site created by ShapeLab to demonstrate how web design was done in the time just after the World Wide Web was made public. 
-            This style of website was common from 1991 up to around 2004, after which more stringent design conventions began developing. 
-            <br>
-            <br>
-            Explore:
-            <ul>
-                <li> <a href="/Site3HTML/SitePage1/HTML">What is HTML?</a> </li>
-                <li> <a href="/Site3HTML/SitePage2/HTML">Origins of the World Wide Web, and how it impacted graphical design</a> </li>
-                <li> <a href="/Site3HTML/SitePage3/HTML"> The technical limitations of early web design</a></li>
-                <li><a href="/Site3HTML/SitePage4/HTML">The adoption of websites as an outlet for creativity </a></li>
-                <li>'Y2K'</li>
+                
+                <!-- HeaderNav -->
+                    <div class="HomeSection" id="HomeSection">
+                        <a href="/Site3HTML/SiteHome/index">Home (you are here)</a> 
+                    </div> <p></p>
+
+                This is an HTML site created by ShapeLab to demonstrate how web design was done in the time just after the World Wide Web was made public. 
+                This style of website was common from 1991 up to around 2004, after which more stringent design conventions began developing. 
+                <br>
+                <br>
+
+                <!-- Explore section -->
+                Explore:
+                <ul>
+                    <li> <a href="/Site3HTML/SitePage1/HTML">What is HTML?</a> </li>
+                    <li> <a href="/Site3HTML/SitePage2/HTML">Origins of the World Wide Web, and how it impacted graphical design</a> </li>
+                    <li> <a href="/Site3HTML/SitePage3/HTML"> The technical limitations of early web design</a></li>
+                    <li><a href="/Site3HTML/SitePage4/HTML">The adoption of websites as an outlet for creativity </a></li>
+                    <li>'Y2K'</li>
 
 
-                <a href="http://127.0.0.1:3000/index.html">home</a>
-            </ul>
-                where did neo go :(
+                    <a href="http://127.0.0.1:3000/index.html">home</a>
+                </ul>
+
+                neo rotate gif
                 <p></p>
                 
             </div>
         
         </div>
-        
     </div>
 </body>
 

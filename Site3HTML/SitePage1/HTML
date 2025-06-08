@@ -4,73 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment1</title>
-    <link rel="reset" href="/reset.css" />
-    <link rel="stylesheet" href="/Style.css" />
+    <link rel="reset" href="/Site3HTML/reset.css" />
+    <link rel="stylesheet" href="/Site3HTML/Style.css" />
 
 
     </head>
 <body bgcolor="#c1c1c1" >
-    
-    
     <div class="inside">
         <div class="content">
             
     
             <h1>
-        <div class="Eggbox"> What Is HTML? </div>
-        
+                <div class="Eggbox"> What Is HTML? </div>
             </h1>
-                <div class="line_thing">
-             <svg style="width:100%; height:100%;">
-             <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+
+            <!-- Line graphics -->
+            <div class="line_thing">
+                <svg style="width:100%; height:100%;">
+                    <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+                </svg>
+            </div>
+
+            <div class="line_thing2">
+                <svg  style="width:100%; height:100%;">
+        <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
         
-             </svg>
-                </div>
-                <div class="line_thing2">
-            <svg  style="width:100%; height:100%;">
-            <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+                </svg>
+            </div>
             
-          </svg>
-                </div>
-    
-            
-
-            
+            <!-- TextContent -->
             <div class="Eggbox2">
-
+                <!-- HeaderNav -->
                 <div class="HomeSection" id="HomeSection">
                      <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
                 </div> <p></p>
-‘Welcome to the world wide web’ 
-
-
-<p></p> In its simplest terms, HTML was a language that etc etc. html specific here
-
-
-<p></p>
-
-
-\<p></p>       
-Useful links and images to cern etc etc
-<p></p>
 
 
 
-<p></p>
-            <br>
-            Explore:
-            <ul>
-                <li> <a href="url">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
-                <li>The technical limitations of early web design</li>
-                <li>The adoption of websites as an outlet for creativity</li>
-                <li>'Y2K'</li>
-            </ul>
+                <!-- Information -->
+                ‘Welcome to the world wide web’ 
+
+
+                <p></p> 
+                In its simplest terms, HTML (hypertext markup language) was a coding language dedicated to organising specific information to be displayed on a web browser. While the 1st publically published version appeared in 1993, it technically existed long before that in the late 1980's. This language would contribute to the rapid expansion of the internet in the late 1990's/early 2000's. 
+                <p></p>
+                The first form of HTML was incredibly simple. The internet at this time was treated far more as a utilitarian tool rather than what it is today. 
+                <p></p>
+
+                HTML 1.0: 
+                <p></p>
+                Document structure
+                <p></p>
+                Text formatting
+                <p></p>
+                /headings
+                <p></p>
+                Lists
+                <p></p>
+                Links and navigation
+                <p></p>
+                Images and metadata
+                <p></p>
+
+
+
+                <pre>
+                    &lt;A> &lt;ADDRESS> &lt;B> &lt;BASE> &lt;BLOCKQUOTE> &lt;BODY> &lt;CITE> &lt;CODE> &lt;DD> &lt;DFN> &lt;DIR> &lt;DL> &lt;DT> &lt;EM> &lt;H1> &lt;H2> &lt;H3> &lt;H4> &lt;H5> &lt;H6> &lt;HEAD> &lt;HTML> &lt;I> &lt;IMG> &lt;ISINDEX> &lt;KBD> &lt;KEY> &lt;LI> &lt;LINK> &lt;LISTING> &lt;MENU> &lt;NEXTID> &lt;OL> &lt;P> &lt;PLAINTEXT> &lt;PRE> &lt;SAMP> &lt;STRONG> &lt;TITLE> &lt;TT> &lt;U> &lt;UL> &lt;VAR> &lt;XMP>
+                </pre> 
+                etc
+
+                <p></p>
+
+
+                \<p></p>       
+                Useful links and images to cern etc etc
+                <p></p>
+
+                <!-- Explore section -->
+                Explore:
+                neutered because it caused problems for some reason
+
+
+
             </div>
         
         </div>
-        
     </div>
-    
 </body>
 
 </html>
