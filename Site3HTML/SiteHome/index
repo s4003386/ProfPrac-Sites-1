@@ -34,7 +34,7 @@
     
             <div class="Eggbox2">
             This is an HTML site created by ShapeLab to demonstrate how web design was done in the time just after the World Wide Web was made public. 
-            This style of website was common from 1991 up to around 2004 where more stringent design conventions began developing. 
+            This style of website was common from 1991 up to around 2004, after which more stringent design conventions began developing. 
             <br>
             <br>
             Explore:
@@ -48,6 +48,9 @@
 
                 <a href="http://127.0.0.1:3000/index.html">home</a>
             </ul>
+
+                <p></p>
+                neo gif at the bottom? meowhaps?
             </div>
         
         </div>
