@@ -32,12 +32,12 @@
         
         <div id="MainSpace" class="MainSpace" style="position: relative;">
         <div id="AltoWelcomeBox" class="AltoWelcomeBox" style="position: absolute;">
-            <div id="AltoWelcomeBoxHeader" class="AltoWelcomeBoxHeader">Click</div>
-            to move
+            <div id="AltoWelcomeBoxHeader" class="AltoWelcomeBoxHeader">Welcome</div>
+            You can use the right click to open the context menu, or use the command input at the top of the screen to interact with the site.
         </div>
 
 
-        <div class="FileExplorer" style="position: absolute;">
+        <div class="FileExplorer" style="position: absolute; display: none;">
             <div class="FileExplorerHeader">File Explorer</div>
             <div class="FileExplorerBody">
                 <div class="FileColumn" id="FileColumn1"></div>

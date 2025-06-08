@@ -53,9 +53,62 @@
 
                 HTML 1.0: 
                 <p></p>
-                Document structure
+                <h4>Document structure</h4>
+                    <pre>
+                        &lt;HEAD> &lt;HTML> &lt;BODY> &lt;TITLE>
+                    </pre>
+                    <p></p>
+
                 <p></p>
-                Text formatting
+                <h4>Text formatting</h4>
+                    <pre>
+                        &lt;B> bold
+                        &lt;I> italic
+                        &lt;U> underline
+                        &lt;EM> emphasis
+                        &lt;STRONG>
+
+                        &lt;CITE>
+                        &lt;CODE>
+                        &lt;KBD>
+                        &lt;SAMP> 
+                        &lt;DFN>
+                        &lt;VAR>
+                        &lt;TT>
+
+                        Lists
+                        &lt;UL>
+                        &lt;UO>
+                        &lt;LI>
+                        &lt;DL>
+                        &lt;DT> 
+                        &lt;DD>
+                        &lt;DIR>
+                        &lt;MENU>
+
+                        headings
+                        &lt;H1> &lt;H2> &lt;H3> &lt;H4> &lt;H5> &lt;H6>
+
+                        links and navigation
+                        &lt;A>
+                        &lt;BASE>
+                        &lt;LINK>
+                        &lt;NEXTID>
+                        
+                        &lt;BLOCKQUOTE>
+                        
+                        &lt;IMG>
+
+                        &lt;ISINDEX>
+
+                        &lt;ADDRESS>
+
+                        &lt;PRE> 
+                        &lt;PLAINTEXT>
+                        &lt;LISTING> 
+                        &lt;XMP>
+
+                    </pre>
                 <p></p>
                 /headings
                 <p></p>
@@ -69,7 +122,8 @@
 
 
                 <pre>
-                    &lt;A> &lt;ADDRESS> &lt;B> &lt;BASE> &lt;BLOCKQUOTE> &lt;BODY> &lt;CITE> &lt;CODE> &lt;DD> &lt;DFN> &lt;DIR> &lt;DL> &lt;DT> &lt;EM> &lt;H1> &lt;H2> &lt;H3> &lt;H4> &lt;H5> &lt;H6> &lt;HEAD> &lt;HTML> &lt;I> &lt;IMG> &lt;ISINDEX> &lt;KBD> &lt;KEY> &lt;LI> &lt;LINK> &lt;LISTING> &lt;MENU> &lt;NEXTID> &lt;OL> &lt;P> &lt;PLAINTEXT> &lt;PRE> &lt;SAMP> &lt;STRONG> &lt;TITLE> &lt;TT> &lt;U> &lt;UL> &lt;VAR> &lt;XMP>
+                    mystery characters
+                    &lt;KEY>  &lt;P>        
                 </pre> 
                 etc
 
@@ -83,6 +137,8 @@
                 <!-- Explore section -->
                 Explore:
                 neutered because it caused problems for some reason
+
+                At about the same time, Microsoft launched its Internet Explorer on August 16, 1995. This operating system played a big role in the early popularization of the World Wide Web, which consequently contributed to the further adoption of HTML.
 
 
 

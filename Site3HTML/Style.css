@@ -8,7 +8,7 @@ body {
 position: fixed;
   display: flex;
   justify-content: center;
-overflow: hidden;
+
 width: 1536px;
 height: 1080px;
 background-color: #000000;
@@ -16,19 +16,15 @@ margin: 0px;
 padding: 0%;
 }
 
-.content{
-    position: fixed;
-    overflow: hidden;
+.content {
+    position: relative; /* or remove position altogether */
+    overflow-y: auto;
     background-color: #c1c1c1;
     width: 920px;
     height: 1080px;
+    scrollbar-color:  rgb(139, 139, 139) rgb(43, 43, 43);
 }
 
-.line {
-border-bottom: 5px solid rgb(0, 0, 0);
-margin-top: 1px;
-width: 90%;
-}
 
 .bars{
   position: absolute;
@@ -41,36 +37,51 @@ width: 90%;
 
 
 
-.line_thing{
-    position: absolute;
-    z-index: -1;
-    margin-top: -15%;
-    margin-left: 15.0%;
-    height: 150%;
 
-}
-
-.line_thing2{
-    position: absolute;
-    z-index: -1;
-    margin-top: 10%;
-    margin-left: -5%;
-    margin-right: 0%;
-    width: 120%;
-
-
-}
-
+/*universal styling*/
 .Eggbox{
     position: absolute;
     margin-top: 5%;
     margin-left: 20%;
-    margin-right: 0%;
+    margin-right: 5%;
 }
 
 .Eggbox2{
     position: absolute;
     margin-top: 12%;
     margin-left: 20%;
-    margin-right: 0%;
+    margin-right: 5%;
 }
+
+/* home page styling */
+.line_thing {
+    position: absolute;
+    z-index: 0;
+    top: 0; /* instead of negative margin */
+    left: 15%;
+    height: 1500px;
+    width: 3px;
+}
+
+.line_thing2 {
+    position: absolute;
+    z-index: 0;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+}
+
+.line_thing svg,
+.line_thing2 svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* Site Page 1 styling */
+
+/* Site Page 2 styling */
+/* Site Page 3 styling */
+/* Site Page 4 styling */

@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const Commands = {
     help: "Available commands: FileExplorer, help",
     FileExplorer: "FileExplorer Spawned.",
+    meow: "Meow! ",
   };
 
   output.innerHTML += `<div class="output-line">System on. Awaiting commands.</div>`;
@@ -23,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   //bring to front function
   function bringToFront(el) {
-    topZ += 1;
+    topZ += 2;
     el.style.zIndex = topZ;
   }
 
@@ -84,6 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
           col2.innerHTML = `
             <div class="FileItem" data-file="Text 1">Text 1</div>
             <div class="FileItem" data-file="Text 2">Text 2</div>
+            <div class="FileItem" data-file="Text 3">Text 3</div>
           `;
         } else if (folder === "folder2") {
           col2.innerHTML = `
@@ -91,19 +93,21 @@ document.addEventListener("DOMContentLoaded", function () {
           `;
         }
 
+        //Contains the information for the text files//
         col2.querySelectorAll(".FileItem").forEach(fileItem => {
           fileItem.addEventListener("dblclick", () => {
             const name = fileItem.dataset.file;
             if (name === "Neo.img") {
               spawnImageViewer("Neo.img", "Images/NeoTestImage2.png");
+            } else if (name === "Text 1") {
+              spawnTextViewer("Text 1", "The Xerox Alto was one of the first computers to have a graphical user interface (GUI) and a mouse. It was developed at Xerox PARC in the 1970s and was a precursor to modern personal computers. The Alto featured a black and white bitmap display, which looked similar to what you are looking at now. It was able to display text and simple graphics, and was the beggining of the desktop metaphor we use today. The Alto was never sold commercially, but it influenced many later systems, including the Apple Macintosh and Microsoft Windows.");
+            } else if (name === "Text 2") {
+              spawnTextViewer("Text 2", "It was actually possible to customise the Alto's interface with different fonts and sizes, but it was not as flexible as modern systems. The Alto used a bitmap display, which allowed for more complex graphics than earlier systems that used character-based displays. However, the Alto's display was still limited to black and white, and did not support color until later models were developed.");
+            } else if (name === "Text 3") {
+              spawnTextViewer("Text 3", "Fun fact: You can actually edit the text in this viewer! Just double-click on the text to edit it. The Alto's text editor was one of the first to support WYSIWYG (What You See Is What You Get) editing, allowing users to see how their text would look when printed or displayed. Functions like copy, paste and undo were always available from the start.");
             } else {
               alert(`You double-clicked: ${name}`);
             }
-          });
-
-          fileItem.addEventListener("click", (e) => {
-            e.preventDefault();
-            showFileContextMenu(e, fileItem.dataset.file);
           });
         });
       });
@@ -113,8 +117,49 @@ document.addEventListener("DOMContentLoaded", function () {
     bringToFront(explorer);
     dragElement(explorer, explorer.querySelector(".FileExplorerHeader"));
   }
-  
 
+  //viewer for text
+  //Text viewer template
+function textViewerTemplate(headerText, bodyText) {
+  const viewer = document.createElement("div");
+  viewer.classList.add("TextViewer");
+  viewer.style.position = "absolute";
+  viewer.style.top = "86px";
+  viewer.style.left = "100px";
+  viewer.style.width = "300px";
+  viewer.style.height = "200px";
+  viewer.style.background = "#f1f1f1";
+  viewer.style.border = "3px solid #000";
+  viewer.style.boxSizing = "border-box";
+  viewer.innerHTML = `
+    <div class="TextViewerHeader" style="background:#000;color:#fff;padding:4px;cursor:move;">${headerText}</div>
+    <textarea style="padding:10px;overflow:auto;height:150px;width:95%;resize:none;font-family:'Courier New',monospace;font-size:12px;box-sizing:border-box;">${bodyText}</textarea>
+  `;
+  return viewer;
+}
+
+function spawnTextViewer(headerText, bodyText) {
+  const viewer = textViewerTemplate(headerText, bodyText);
+
+  viewer.onmousedown = function () {
+    bringToFront(viewer);
+  };
+
+  dragElement(viewer, viewer.querySelector(".TextViewerHeader"));
+
+  viewer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = viewer;
+    bringToFront(viewer);
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  container.appendChild(viewer);
+  bringToFront(viewer);
+}
+  
+//viewer for image
 function imageViewerTemplate(headerText, imageUrl) {
   const viewer = document.createElement("div");
   viewer.classList.add("ImageViewer");
@@ -178,6 +223,8 @@ function imageViewerTemplate(headerText, imageUrl) {
     return `Unknown command: ${cmd}`;
   }
 
+
+  //context menu logic
 function showMenuAt(event, menuElement) {
   const containerRect = container.getBoundingClientRect();
   const menuWidth = menuElement.offsetWidth || 120;
@@ -280,3 +327,6 @@ function showMenuAt(event, menuElement) {
     return false;
   };
 });
+
+
+
