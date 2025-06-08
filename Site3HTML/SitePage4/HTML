@@ -35,18 +35,12 @@
             <div class="Eggbox2">
 ‘Welcome to the world wide web’
 
-Initially just a project created by CERN back in 1991, the world wide web became a host to 
 
-graphical web browsers
-mossaic
-
-Websites for the most part, were constrained to very specific uses. While nowadays its common to have multiple people manage a website (from front end designers, UX designers, systems engineers, digital editors etc), in the 1990’s, sites were likely to only have one ‘webmaster’. It is also around this time where the shift to LCD from CRT began. 
-
-Monitors were still smaller than their modern counterparts, however still larger than the eras before them
-
-‘While HTML had some support for visual customization, the original  concept of hypertext prioritized linear, text-based content that did not allow much visual control. Since HTML did not bundle fonts, only a  small selection of “web-safe” fonts were available. Designers turned to  tables and images to gain precise control over how their content was  arranged on the screen, but adding too many images came at the cost of  load time.
-Sites had to be limited in size, as websites had to be updated by  manually editing the HTML for each page, or in the late 90’s, using  Macromedia Dreamweaver.’            <br>
+<p></p>
+    this shit is soooo messsy omg. Add later era sites and images/examples whatever. 
             <br>
+
+            <p></p>
             Explore:
             <ul>
                 <li> <a href="url">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
