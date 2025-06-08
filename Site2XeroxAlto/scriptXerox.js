@@ -19,6 +19,143 @@ document.addEventListener("DOMContentLoaded", function () {
 
   output.innerHTML += `<div class="output-line">System on. Awaiting commands.</div>`;
 
+  function spawnImageViewer(headerText, imageUrl) {
+  const viewer = imageViewerTemplate(headerText, imageUrl);
+
+  // Bring to front on click
+  viewer.onmousedown = function () {
+    bringToFront(viewer);
+  };
+
+  // Make draggable
+  dragElement(viewer, viewer.querySelector("#ImageViewerHeader"));
+
+  // Context menu support
+  viewer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = viewer;
+    bringToFront(viewer); // <-- Add this to ensure context menu also brings to front
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  container.appendChild(viewer);
+  bringToFront(viewer); // Ensure it's on top when created
+}
+
+// ...existing code...
+
+let topZ = 100; // Start below TopBar/CommandInput
+
+function bringToFront(el) {
+  topZ += 1;
+  el.style.zIndex = topZ;
+}
+
+// ...existing code...
+
+function spawnImageViewer(headerText, imageUrl) {
+  const viewer = imageViewerTemplate(headerText, imageUrl);
+
+  // Bring to front on click
+  viewer.onmousedown = function () {
+    bringToFront(viewer);
+  };
+
+  // Make draggable
+  dragElement(viewer, viewer.querySelector("#ImageViewerHeader"));
+
+  // Context menu support
+  viewer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = viewer;
+    bringToFront(viewer);
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  container.appendChild(viewer);
+  bringToFront(viewer); // Ensure it's on top when created
+}
+
+// ...existing code...
+
+function spawnFileExplorer() {
+  const explorer = explorerTemplate();
+
+  // Bring to front on click
+  explorer.onmousedown = function () {
+    bringToFront(explorer);
+  };
+
+  explorer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = explorer;
+    bringToFront(explorer);
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  // ...existing code...
+  container.appendChild(explorer);
+  bringToFront(explorer);
+  dragElement(explorer, explorer.querySelector(".FileExplorerHeader"));
+}
+
+// ...existing code...
+
+// ...existing code...
+
+function spawnFileExplorer() {
+  const explorer = explorerTemplate();
+
+  // Bring to front on click
+  explorer.onmousedown = function () {
+    bringToFront(explorer);
+  };
+
+  explorer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = explorer;
+    bringToFront(explorer);
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  // ...existing code...
+  container.appendChild(explorer);
+  bringToFront(explorer);
+  dragElement(explorer, explorer.querySelector(".FileExplorerHeader"));
+}
+
+// ...existing code...
+
+function spawnImageViewer(headerText, imageUrl) {
+  const viewer = imageViewerTemplate(headerText, imageUrl);
+
+  // Bring to front on click
+  viewer.onmousedown = function () {
+    bringToFront(viewer);
+  };
+
+  // Make draggable
+  dragElement(viewer, viewer.querySelector("#ImageViewerHeader"));
+
+  // Context menu support
+  viewer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = viewer;
+    bringToFront(viewer);
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  container.appendChild(viewer);
+  bringToFront(viewer);
+}
+
+// ...existing code...
+  
   input.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
       const cmd = input.value.trim();
@@ -41,15 +178,29 @@ document.addEventListener("DOMContentLoaded", function () {
     return `Unknown command: ${cmd}`;
   }
 
-  function showMenuAt(event, menuElement) {
-    const containerRect = container.getBoundingClientRect();
-    let left = event.clientX - containerRect.left;
-    let top = event.clientY - containerRect.top;
+function showMenuAt(event, menuElement) {
+  const containerRect = container.getBoundingClientRect();
+  const menuWidth = menuElement.offsetWidth || 120; // fallback width
+  const menuHeight = menuElement.offsetHeight || 60; // fallback height
 
-    menuElement.style.left = `${left}px`;
-    menuElement.style.top = `${top}px`;
-    menuElement.style.display = "block";
+  let left = event.clientX - containerRect.left;
+  let top = event.clientY - containerRect.top;
+
+  // Adjust if menu would overflow right or bottom edge
+  if (left + menuWidth > container.clientWidth) {
+    left = container.clientWidth - menuWidth;
   }
+  if (top + menuHeight > container.clientHeight) {
+    top = container.clientHeight - menuHeight;
+  }
+  // Prevent negative positions
+  left = Math.max(0, left);
+  top = Math.max(0, top);
+
+  menuElement.style.left = `${left}px`;
+  menuElement.style.top = `${top}px`;
+  menuElement.style.display = "block";
+}
 
   function showFileContextMenu(event, filename) {
     fileMenu.innerHTML = `
@@ -155,41 +306,89 @@ document.addEventListener("DOMContentLoaded", function () {
       showMenuAt(e, windowMenu);
       return false;
     };
+// ...existing code...
 
-    explorer.querySelectorAll("[data-folder]").forEach(item => {
-      item.addEventListener("click", () => {
-        const folder = item.dataset.folder;
-        const col2 = explorer.querySelector("#FileColumn2");
-        const col3 = explorer.querySelector("#FileColumn3");
-        col2.innerHTML = "";
-        col3.innerHTML = "";
+function imageViewerTemplate(headerText, imageUrl) {
+  const viewer = document.createElement("div");
+  viewer.id = "ImageViewer";
+  viewer.style.position = "absolute";
+  viewer.style.top = "150px";
+  viewer.style.left = "150px";
+  viewer.style.width = "320px";
+  viewer.style.height = "260px";
+  viewer.innerHTML = `
+    <div id="ImageViewerHeader">${headerText}</div>
+    <div style="padding:10px;">
+      <img src="${imageUrl}" alt="${headerText}" style="max-width:100%;max-height:180px;display:block;margin:auto;">
+    </div>
+  `;
+  return viewer;
+}
 
-        if (folder === "folder1") {
-          col2.innerHTML = `
-            <div class="FileItem" data-file="Text 1">Text 1</div>
-            <div class="FileItem" data-file="Text 2">Text 2</div>
-          `;
-        } else if (folder === "folder2") {
-          col2.innerHTML = `
-            <div class="FileItem" data-file="Neo.img">Neo.img</div>
-          `;
+function spawnImageViewer(headerText, imageUrl) {
+  const viewer = imageViewerTemplate(headerText, imageUrl);
+
+  // Make draggable
+  dragElement(viewer, viewer.querySelector("#ImageViewerHeader"));
+
+  // Context menu support
+  viewer.oncontextmenu = function (e) {
+    e.preventDefault();
+    selectedWindow = viewer;
+    showMenuAt(e, windowMenu);
+    return false;
+  };
+
+  container.appendChild(viewer);
+}
+
+// ...existing code...
+
+explorer.querySelectorAll("[data-folder]").forEach(item => {
+  item.addEventListener("click", () => {
+    // Remove .selected from all folders
+    explorer.querySelectorAll("[data-folder]").forEach(i => i.classList.remove("selected"));
+    // Add .selected to the clicked folder
+    item.classList.add("selected");
+
+    const folder = item.dataset.folder;
+    const col2 = explorer.querySelector("#FileColumn2");
+    const col3 = explorer.querySelector("#FileColumn3");
+    col2.innerHTML = "";
+    col3.innerHTML = "";
+
+    if (folder === "folder1") {
+      col2.innerHTML = `
+        <div class="FileItem" data-file="Text 1">Text 1</div>
+        <div class="FileItem" data-file="Text 2">Text 2</div>
+      `;
+    } else if (folder === "folder2") {
+      col2.innerHTML = `
+        <div class="FileItem" data-file="Neo.img">Neo.img</div>
+      `;
+    }
+
+    col2.querySelectorAll(".FileItem").forEach(fileItem => {
+      fileItem.addEventListener("dblclick", () => {
+        const name = fileItem.dataset.file;
+        if (name === "Neo.img") {
+          spawnImageViewer("Neo.img", "Images/NeoTestImage2.png");
+        } else {
+          alert(`You double-clicked: ${name}`);
         }
+      });
 
-        col2.querySelectorAll(".FileItem").forEach(fileItem => {
-          fileItem.addEventListener("dblclick", () => {
-            const name = fileItem.dataset.file;
-            alert(`You double-clicked: ${name}`);
-          });
-
-          fileItem.addEventListener("click", (e) => {
-            e.preventDefault();
-            showFileContextMenu(e, fileItem.dataset.file);
-          });
-        });
+      fileItem.addEventListener("click", (e) => {
+        e.preventDefault();
+        showFileContextMenu(e, fileItem.dataset.file);
       });
     });
+  });
+});
+// ...existing code...
 
     container.appendChild(explorer);
     dragElement(explorer, explorer.querySelector(".FileExplorerHeader"));
   }
 });
+
