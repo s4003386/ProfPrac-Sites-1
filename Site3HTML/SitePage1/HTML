@@ -41,9 +41,9 @@
                 <div class="HomeSection" id="HomeSection">
                      <a href="/Site3HTML/SiteHome/index">Home</a> > Origins of the world wide web 
                 </div> <p></p>
-‘Welcome to the world wide web’ egg
+‘Welcome to the world wide web’ 
 
-Initially just a project created by CERN back in 1991, the world wide web became a host to 
+Initially just a project created by CERN back in 1991, the world wide web became a massive repository for information and communication. 
 
 graphical web browsers
 mossaic
@@ -54,6 +54,11 @@ Monitors were still smaller than their modern counterparts, however still larger
 
 ‘While HTML had some support for visual customization, the original  concept of hypertext prioritized linear, text-based content that did not allow much visual control. Since HTML did not bundle fonts, only a  small selection of “web-safe” fonts were available. Designers turned to  tables and images to gain precise control over how their content was  arranged on the screen, but adding too many images came at the cost of  load time.
 Sites had to be limited in size, as websites had to be updated by  manually editing the HTML for each page, or in the late 90’s, using  Macromedia Dreamweaver.’            <br>
+           
+Useful links and images to cern etc etc
+
+
+
             <br>
             Explore:
             <ul>
