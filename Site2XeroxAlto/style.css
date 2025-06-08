@@ -1,0 +1,231 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    font-size: 12px;
+}
+
+.MainSpace{
+    width: 525px;
+    height: 700px;
+    margin: auto;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    background-image: url(Images/Artboard_1.png);
+    background-size: 450px;
+}
+
+#TopBar{
+  margin: auto;
+  background-color: #ffffff;
+  width: 100px;
+  color: #000000;
+  text-align: center;
+  border: 3px solid #000000;
+}
+
+
+#CommandInput{
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  color: #000000;
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  z-index: 50;
+  box-sizing: border-box;
+  overflow: hidden; 
+  margin-top:-18px;
+}
+
+
+
+.Output{
+  flex: 1; /* Takes remaining space above the input */
+  overflow-y: auto; /* Allows scrolling inside this div */
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+  padding: 4px 8px;
+  box-sizing: border-box;
+  scrollbar-width: none;/* hide scrollbar in Firefox */
+}
+
+.Output::-webkit-scrollbar {
+  display: none;
+}
+
+#command {
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: rgb(255, 255, 255);
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+
+
+input[type="text"] {
+  font-family: 'VT323', monospace;
+  font-size: 12px;
+  background-color: #1a1a1a;
+  color: lime;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input{
+    position: absolute;
+
+}
+
+
+
+
+
+
+.FileExplorer {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 300px;
+  height: 200px;
+  z-index: 10;
+}
+
+.FileExplorerHeader {
+  background-color: #000000;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-weight: bold;
+  cursor: move;
+  border: 3px solid #000000;
+}
+
+.FileExplorerBody {
+  display: flex;
+  height: calc(100% - 30px);
+  border: 3px solid #000000;
+  border-top: none;
+  background-color: #f1f1f1;
+  overflow: hidden;
+}
+
+.FileColumn {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 5px;
+  overflow-y: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 12px;
+}
+
+.FileColumn:last-child {
+  border-right: none;
+}
+
+.FileItem {
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.FileItem:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+
+
+
+.ContextMenu{
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  border: 3px solid #000000;
+  z-index: 97;
+}
+
+.ContextMenu div {
+
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 98;
+}
+
+.ContextMenu div:hover {
+  background-color: #000000;
+  color: #f1f1f1;
+  z-index: 99;
+}
+
+#MoveOption{
+
+}
+#CloseOption{
+
+}
+
+
+#AltoWelcomeBox {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 3px solid #000000;
+  top: 86px;
+}
+
+#AltoWelcomeBoxHeader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #000000;
+  color: #fff;
+}
+
+#FileList{
+  position: absolute;
+  z-index: 7;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 3px solid #000000;
+}
+
+#FileListHeader{
+  cursor: move;
+  z-index: 8;
+  background-color: #000000;
+  color: #fff;
+}
+
+#CommandBar{
+  position: absolute;
+  z-index: 7;
+  background-color: #f1f1f1;
+  text-align: center;
+  border: 3px solid #000000;
+}
+
+#CommandBarHeader{
+  cursor: move;
+  z-index: 8;
+  background-color: #000000;
+  color: #fff;
+}
+
+
+.Taskbar{
+    
+}

@@ -1,0 +1,38 @@
+.Body{
+    font-size: 30px;
+}
+
+
+.AllContainer{
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+
+}
+
+.SiteFlexContainer{
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    flex: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    width: 300px;
+    height: 400px;
+}
+
+.SiteThumbnail{
+    size: 500px;
+}
+
+.SiteTitle{
+
+}
+
+.SiteContent{
+
+}

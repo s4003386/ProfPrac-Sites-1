@@ -1,0 +1,76 @@
+ 
+body {
+    padding:0;
+    margin:0;
+}
+
+.inside{
+position: fixed;
+  display: flex;
+  justify-content: center;
+overflow: hidden;
+width: 1536px;
+height: 1080px;
+background-color: #000000;
+margin: 0px;
+padding: 0%;
+}
+
+.content{
+    position: fixed;
+    overflow: hidden;
+    background-color: #c1c1c1;
+    width: 920px;
+    height: 1080px;
+}
+
+.line {
+border-bottom: 5px solid rgb(0, 0, 0);
+margin-top: 1px;
+width: 90%;
+}
+
+.bars{
+  position: absolute;
+  height: 1500px;
+  width: 50px;
+  background-color: #000000;
+  margin-left: -1%;
+  margin-top: -1%;
+}
+
+
+
+.line_thing{
+    position: absolute;
+    z-index: -1;
+    margin-top: -15%;
+    margin-left: 15.0%;
+    height: 150%;
+
+}
+
+.line_thing2{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10%;
+    margin-left: -5%;
+    margin-right: 0%;
+    width: 120%;
+
+
+}
+
+.Eggbox{
+    position: absolute;url(Style.css)
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 0%;
+}
+
+.Eggbox2{
+    position: absolute;
+    margin-top: 12%;
+    margin-left: 20%;
+    margin-right: 0%;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment1</title>
+    <link rel="reset" href="/reset.css" />
+    <link rel="stylesheet" href="/Site2XeroxAlto/style.css" />
+    <script src="/Site2XeroxAlto/scriptXerox.js"></script>
+
+
+</head>
+
+<body>
+    xerox
+    
+    <a href="http://127.0.0.1:3000/Index.html">home</a>
+
+    <div class="MainSpace" > 
+        <div id="TopBar">
+            Top View
+        </div>
+        
+        <div id="CommandInput">
+        <div id="output" class="Output"></div>
+        <input 
+            type="text"
+            id="command"
+            maxlength="15"
+            autocomplete="off"
+            autofocus>
+        </div>
+        
+        <div id="MainSpace" class="MainSpace" style="position: relative;">
+        <div id="AltoWelcomeBox" class="AltoWelcomeBox" style="position: absolute;">
+            <div id="AltoWelcomeBoxHeader" class="AltoWelcomeBoxHeader">Click</div>
+            to move
+        </div>
+
+
+        <div class="FileExplorer" style="position: absolute;">
+            <div class="FileExplorerHeader">File Explorer</div>
+            <div class="FileExplorerBody">
+                <div class="FileColumn" id="FileColumn1"></div>
+                <div class="FileColumn" id="FileColumn2"></div>
+                <div class="FileColumn" id="FileColumn3"></div>
+            </div>
+        </div>
+
+
+
+<!-- Window Context Menu -->
+<div id="WindowContextMenu" class="ContextMenu" style="display: none;">
+  <div id="MoveOption">Move</div>
+  <div id="CloseOption">Close</div>
+</div>
+
+<!-- File Item Context Menu -->
+<div id="FileContextMenu" class="ContextMenu" style="display: none;"></div>
+
+
+
+
+    </div>
+
+
+</body>

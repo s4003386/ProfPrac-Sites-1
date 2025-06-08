@@ -1,0 +1,130 @@
+.body{
+    background-image: url("DatapointBG.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=VT323&display=swap);
+}
+
+* {
+   font-family: myFirstFont;
+}
+
+.Logo{
+  position: absolute;
+  margin-left: 66%;
+  margin-top: 2%;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 40px;
+}
+
+.kaisei-opti-regular {
+  font-family: "Kaisei Opti", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.DisplayShape{
+    width: 750px;
+    height: 400px;
+    background-color: #000000;
+    margin-top: 10%;
+    margin-left: 10%;
+    justify-content: center;
+    position: absolute;
+    border-radius: 15px;
+    opacity: 100%;
+
+    display: block;
+}
+
+.DisplayScreen{
+    display: flex;
+    flex-direction: column;
+    width: 675px;
+    height: 325px;
+    background-color: #393F3F;
+    margin: auto;
+    margin-top: 35px;
+    border-radius: 25px;
+    padding-top: 20px;
+    font-family: 'VT323', monospace;
+    overflow: hidden;
+  color: lime;
+  padding: 10px;
+  box-sizing: border-box;
+  overflow-y: hidden;
+
+}
+#command {
+  height: 30px;
+  font-size: 20px;
+  font-family: 'VT323', monospace;
+  color: lime;
+  background: transparent;
+  bottom: 5px;
+  left: 10px;
+  width: calc(100% - 20px);
+
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  z-index: 2; /* sit on top of Output */
+
+}
+
+  #command, .Output {
+    font-family: 'VT323', monospace;
+      z-index: 2; /* sit on top of Output */
+  }
+
+.Output{
+  flex-direction: column-reverse; /* ← puts newest at the bottom */
+  flex: 1;
+  height: 300px;
+  overflow-y: auto;
+  font-family: 'VT323', monospace;
+  padding-bottom: 30px; /* make space for input field */
+  color: lime;
+  padding: 10px;
+  padding-bottom: 40px;
+  scrollbar-width: none;
+  overflow-y: hidden; /*stops scroll in displayScreen*/
+}
+
+.output-line {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  color: lime;
+}
+
+.output-line.error {
+  color: red;
+}
+
+input[type="text"] {
+  font-family: 'VT323', monospace;
+  font-size: 20px;
+  background-color: #1a1a1a;
+  color: lime;
+  border: none;
+  outline: none;
+  padding: 4px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input{
+    position: absolute;
+      font-family: 'VT323', monospace;
+}
+
+#demobox {
+  background-color: #cfc ;
+} 
