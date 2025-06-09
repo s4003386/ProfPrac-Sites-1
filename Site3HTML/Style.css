@@ -81,7 +81,14 @@ padding: 0%;
 
 
 /* Site Page 1 styling */
-
+.content_site1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
 /* Site Page 2 styling */
 /* Site Page 3 styling */
 /* Site Page 4 styling */

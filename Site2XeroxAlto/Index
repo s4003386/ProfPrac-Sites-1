@@ -15,52 +15,41 @@
     
     <a href="http://127.0.0.1:3000/index.html">home</a>
 
-    <div class="MainSpace" > 
-        <div id="TopBar">
-            Top View
-        </div>
-        
-        <div id="CommandInput">
+<div id="MainSpace" class="MainSpace" style="position: relative;">
+    <div id="TopBar">Top View</div>
+    <div id="CommandInput">
         <div id="output" class="Output"></div>
-        <input 
-            type="text"
-            id="command"
-            maxlength="15"
-            autocomplete="off"
-            autofocus>
+        <input type="text" id="command" maxlength="15" autocomplete="off" autofocus>
+    </div>
+
+    <div id="AltoWelcomeBox" class="AltoWelcomeBox" style="position: absolute;">
+        <div id="AltoWelcomeBoxHeader" class="AltoWelcomeBoxHeader">Welcome</div>
+        You can use the right click to open the context menu, or use the command input at the top of the screen to interact with the site.
+    </div>
+
+    <div class="FileExplorer" style="position: absolute; display: none;">
+        <div class="FileExplorerHeader">File Explorer</div>
+        <div class="FileExplorerBody">
+            <div class="FileColumn" id="FileColumn1"></div>
+            <div class="FileColumn" id="FileColumn2"></div>
+            <div class="FileColumn" id="FileColumn3"></div>
         </div>
-        
-        <div id="MainSpace" class="MainSpace" style="position: relative;">
-        <div id="AltoWelcomeBox" class="AltoWelcomeBox" style="position: absolute;">
-            <div id="AltoWelcomeBoxHeader" class="AltoWelcomeBoxHeader">Welcome</div>
-            You can use the right click to open the context menu, or use the command input at the top of the screen to interact with the site.
-        </div>
+    </div>
 
+    <!-- Window Context Menu -->
+    <div id="WindowContextMenu" class="ContextMenu" style="display: none;">
+        <div id="MoveOption">Move</div>
+        <div id="CloseOption">Close</div>
+    </div>
+    <!-- File Item Context Menu -->
+    <div id="FileContextMenu" class="ContextMenu" style="display: none;"></div>
 
-        <div class="FileExplorer" style="position: absolute; display: none;">
-            <div class="FileExplorerHeader">File Explorer</div>
-            <div class="FileExplorerBody">
-                <div class="FileColumn" id="FileColumn1"></div>
-                <div class="FileColumn" id="FileColumn2"></div>
-                <div class="FileColumn" id="FileColumn3"></div>
-            </div>
-        </div>
-
-
-
-<!-- Window Context Menu -->
-<div id="WindowContextMenu" class="ContextMenu" style="display: none;">
-  <div id="MoveOption">Move</div>
-  <div id="CloseOption">Close</div>
+    <!-- Trash Icon -->
+    <div class="desktop-icon" id="TrashIcon">
+        <img src="/Site2XeroxAlto/Images/TrashIcon.png" alt="Xerox Alto Icon" class="XeroxAltoIcon">
+    </div>
 </div>
 
-<!-- File Item Context Menu -->
-<div id="FileContextMenu" class="ContextMenu" style="display: none;"></div>
-
-
-
-
-    </div>
 
 
 </body>
