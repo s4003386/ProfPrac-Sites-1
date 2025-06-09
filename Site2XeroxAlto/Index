@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment1</title>
+    <title>WebXeroxSite</title>
     <link rel="reset" href="/reset.css" />
     <link rel="stylesheet" href="/Site2XeroxAlto/style.css" />
     <script src="/Site2XeroxAlto/scriptXerox.js"></script>
@@ -11,8 +11,6 @@
 </head>
 
 <body>
-    xerox
-    
     <a href="http://127.0.0.1:3000/index.html">home</a>
 
 <div id="MainSpace" class="MainSpace" style="position: relative;">
@@ -36,15 +34,13 @@
         </div>
     </div>
 
-    <!-- Window Context Menu -->
     <div id="WindowContextMenu" class="ContextMenu" style="display: none;">
         <div id="MoveOption">Move</div>
         <div id="CloseOption">Close</div>
     </div>
-    <!-- File Item Context Menu -->
+
     <div id="FileContextMenu" class="ContextMenu" style="display: none;"></div>
 
-    <!-- Trash Icon -->
     <div class="desktop-icon" id="TrashIcon">
         <img src="/Site2XeroxAlto/Images/TrashIcon.png" alt="Xerox Alto Icon" class="XeroxAltoIcon">
     </div>

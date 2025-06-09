@@ -11,6 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const moveOption = document.getElementById("MoveOption");
   const closeOption = document.getElementById("CloseOption");
 
+  console.log("Girl help me");
 
   const TrashData = {
   "Trashed Folder 1": [
@@ -519,6 +520,5 @@ function spawnTrashExplorer() {
 
 
 
-//keep the formatting nice like this. ill cry if i have to indent one more thing
-//somethings ometing dry something
+
 //im never touching this again
