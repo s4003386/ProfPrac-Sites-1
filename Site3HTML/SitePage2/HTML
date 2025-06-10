@@ -5,61 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment1</title>
     <link rel="reset" href="/reset.css" />
-    <link rel="stylesheet" href="/Style.css" />
+    <link rel="stylesheet" href="/Site3HTML/Style.css" />
+    <script src="s2script.js"></script>
 
 
     </head>
-<body bgcolor="#c1c1c1" >
+<body>
     <div class="inside">
-        <div class="content">
-            
-    
-            <h1>
-        <div class="Eggbox"> Origins of the World Wide Web </div>
-        
-            </h1>
-                <div class="line_thing">
-             <svg style="width:100%; height:100%;">
-             <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-        
-             </svg>
-                </div>
-                <div class="line_thing2">
-            <svg  style="width:100%; height:100%;">
-            <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-            
-          </svg>
-                </div>
-    
-    
-            <div class="Eggbox2">
-‘Welcome to the world wide web’
-
-Initially just a project created by CERN back in 1991, the world wide web became a host to 
-
-graphical web browsers
-mossaic
-
-Websites for the most part, were constrained to very specific uses. While nowadays its common to have multiple people manage a website (from front end designers, UX designers, systems engineers, digital editors etc), in the 1990’s, sites were likely to only have one ‘webmaster’. It is also around this time where the shift to LCD from CRT began. 
-
-Monitors were still smaller than their modern counterparts, however still larger than the eras before them
-
-‘While HTML had some support for visual customization, the original  concept of hypertext prioritized linear, text-based content that did not allow much visual control. Since HTML did not bundle fonts, only a  small selection of “web-safe” fonts were available. Designers turned to  tables and images to gain precise control over how their content was  arranged on the screen, but adding too many images came at the cost of  load time.
-Sites had to be limited in size, as websites had to be updated by  manually editing the HTML for each page, or in the late 90’s, using  Macromedia Dreamweaver.’            <br>
-            <p></p>
-The vast majority of Internet users at the time would be military personel and/or proffessors working with computers. As such, accessability to the general public was not the main focus of the World Wide Web for a long while, until etcetcetc happened. 
-<p></p>
-talk about web browsers too. have some images maybe. not too many tho
-<p></p>
-        <br>
-            Explore:
-            <ul>
-                <li> <a href="url">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
-                <li>The technical limitations of early web design</li>
-                <li>The adoption of websites as an outlet for creativity</li>
-                <li>'Y2K'</li>
-            </ul>
+        <div class="content_site2">
+            <div class="Site2_BlackLine1 ">
+                <svg style="width:100%; height:100%;">
+                <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+                </svg>
             </div>
+            
+            <div class="Site2_BlackLine2">
+                <svg  style="width:100%; height:100%;">
+                <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+                </svg>
+            </div>
+    
+            
+        <div class="Site2_LeftBox1"> 
+            <h1>Development and popularisation of the Web</h1> 
+            <br>
+                <div class="HomeSection" id="HomeSection">
+                     <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
+                </div> <p></p>
+            <br>
+                In the years since, HTML as a language grew to develop several new key features, such as the ability to display images, video, and other media. This would lead to the development of more complex websites that could be used for a variety of purposes, from personal blogs to e-commerce sites. 8 bit colour was also fairly common, as monitors could finally display more than just black and white. Despite this, the designs of websites were still fairly simple due to the speed of the internet, and the limitations of the technology. 
+                <p></p>
+                Various decorative elements were finally introduced, giving 'web masters' the option to use more styling than just the bare minimum in 1.0. Borders, audio players, sign up pages and simple animations became available with the inclusion of several new tags and better integration of css/javascript in 1996. SVG's such as the lines that you see on this site would also be introduced slightly later in 1999. 
+                <p></p>
+                
+
+                <h4> The world wide web extends!</h4>
+                <p></p>
+                This era of the internet would later be named web 1.0, where most websites were only connected by hyperlinks, and who's users were majority researchers, large companies, and some hobbyists. Despite this, the role of the 'web designer' was born in the form of the 'web master'. Of course, later this role split into several different ones as designs became more complicated. 
+                <br>
+                <p></p>
+                Explore:
+                <ul>
+                    <li> <a href="url">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
+                    <li>The technical limitations of early web design</li>
+                    <li>The adoption of websites as an outlet for creativity</li>
+                    <li>'Y2K'</li>
+                </ul>
+        </div>
+
+        <div class="Site2_RightBox1">
+            <div class="image-loader-wrapper" style=" width:300px; height:auto; overflow:hidden; background:#c1c1c1;">
+                <img class="slowImage" src="Water1crispysmall.bmp" width="300px" style="image-rendering: pixelated; display:block;">
+            </div>
+            New craaaazy graphics !!
+        </div>
+
+        <div class="Site2_RightBox2">
+            <div class="image-loader-wrapper" style="width: 300px; height: auto; overflow: hidden;">
+                <img class="slowImage" src="ibm-1994.png"width="300px"  style="image-rendering: pixelated; display: block;">
+            </div>
+            IBM, 1994
+            <br>
+            <div class="image-loader-wrapper" style="width: 300px; height: auto; overflow: hidden;">
+                <img class="slowImage" src="microsoft-1994.png" width="300px" style="image-rendering: pixelated; display: block;">
+            </div>
+            Microsoft, 1994
+            <div class="image-loader-wrapper" style="width: 300px; height: auto; overflow: hidden;">
+                <img class="slowImage" src="yahoo-1994.png" width="300px" style="image-rendering: pixelated; display: block;">
+            </div>
+            Yahoo, 1994
+        
+
         
         </div>
         

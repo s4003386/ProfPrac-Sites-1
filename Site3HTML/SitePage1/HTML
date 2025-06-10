@@ -9,31 +9,19 @@
 
 
     </head>
-<body bgcolor="#fff" >
+<body>
     <div class="inside">
         <div class="content_site1">
             
     
             <h1>
-                <div class="Eggbox"> What Is HTML? </div>
+                <div class="EggboxSite1"> What Is HTML? </div>
             </h1>
 
-            <!-- Line graphics -->
-            <div class="line_thing">
-                <svg style="width:100%; height:100%;">
-                    <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-                </svg>
-            </div>
 
-            <div class="line_thing2">
-                <svg  style="width:100%; height:100%;">
-        <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-        
-                </svg>
-            </div>
             
             <!-- TextContent -->
-            <div class="Eggbox2">
+            <div class="Eggbox2Site1">
                 <!-- HeaderNav -->
                 <div class="HomeSection" id="HomeSection">
                      <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
@@ -48,16 +36,21 @@
                 <p></p> 
                 In its simplest terms, HTML (hypertext markup language) was a coding language dedicated to organising specific information to be displayed on a web browser. While the 1st publically published version appeared in 1993, it technically existed long before that in the late 1980's. This language would contribute to the rapid expansion of the internet in the late 1990's/early 2000's. 
                 <p></p>
-                The first form of HTML was incredibly simple. The internet at this time was treated far more as a utilitarian tool rather than what it is today. 
+                The first form of HTML was incredibly simple. The internet at this time was treated far more as a utilitarian tool rather than what it is today. Because of this, there is little design variation as there was largely no need. It was not until later when designers started taking websites more seriously and treated web design as its own form of design.
                 <p></p>
-
+                Websites at this time would have been displayed through a web browser like today. The main web browser at the time would have been worldwide web browser, created by Tim Berners-Lee, and later on, Mosaic, which was the first graphical web browser. These browsers would display HTML documents as they were intended to be displayed. later on, web browses that could display images and other media would be created, such as Netscape Navigator and Internet Explorer.
+                <p></p>
                 HTML 1.0: 
                 <p></p>
                 <h4>Document structure</h4>
                     <pre>
-                        &lt;HEAD> &lt;HTML> &lt;BODY> &lt;TITLE>
+                        &lt;HEAD> contains metadata about the document
+                        &lt;HTML> the root element of an HTML document
+                        &lt;BODY> the main content of the document
+                        &lt;TITLE> the title of the document (displayed in the browser's title bar)
                     </pre>
                     <p></p>
+                    These are mandatory tags for any HTML document. All of these are still used today. 
 
                 <p></p>
                 <h4>Text formatting</h4>
@@ -65,87 +58,70 @@
                         &lt;B> bold
                         &lt;I> italic
                         &lt;U> underline
-                        &lt;EM> emphasis
-                        &lt;STRONG>
+                        &lt;EM> emphasis (normally rendered as italic)
+                        &lt;STRONG> Strong (normally rendered as bold)
+                        &lt;P> paragraph (used to separate blocks of text)  
 
-                        &lt;CITE>
-                        &lt;CODE>
-                        &lt;KBD>
-                        &lt;SAMP> 
-                        &lt;DFN>
-                        &lt;VAR>
-                        &lt;TT>
+                        &lt;CITE> citation
+                        &lt;CODE> Inline code snippet
+                        &lt;KBD> keyboard input (monospace font)
+                        &lt;SAMP> Sample output (monospace font)
+                        &lt;DFN> Definition of a term (usually italic)
+                        &lt;VAR> Variable name in math or programming (usually italic)
+                        &lt;TT> teletype text (monospace font) (obsolete now)
 
-                        Lists
-                        &lt;UL>
-                        &lt;UO>
-                        &lt;LI>
-                        &lt;DL>
-                        &lt;DT> 
-                        &lt;DD>
-                        &lt;DIR>
-                        &lt;MENU>
+                        Lists: tags for ordered and unordered lists
+                        &lt;UL> unordered list 
+                        &lt;OL> ordered list
+                        &lt;LI> List item (in UL or OL)
+                        &lt;DL> definition list
+                        &lt;DT> definition term (in DL)
+                        &lt;DD> definition description (in DL)
+                        &lt;DIR> directory list (obsolete now)
+                        &lt;MENU> menu list (obsolete now)
 
-                        headings
+                        headings: the higher the number, the smaller the heading
                         &lt;H1> &lt;H2> &lt;H3> &lt;H4> &lt;H5> &lt;H6>
 
                         links and navigation
-                        &lt;A>
-                        &lt;BASE>
-                        &lt;LINK>
-                        &lt;NEXTID>
+                        &lt;A> anchor (creates hyperlinks)
+                        &lt;BASE> base URL for relative links
+                        &lt;LINK> link to external resources (like stylesheets)
+                        &lt;NEXTID> next document ID in a series (obsolete now)
                         
-                        &lt;BLOCKQUOTE>
+                        Images and metadata
+                        &lt;BLOCKQUOTE> block quotation
                         
-                        &lt;IMG>
+                        &lt;IMG> displays an image 
 
-                        &lt;ISINDEX>
+                        &lt;ISINDEX> input for a single-line search query (obsolete now)
 
-                        &lt;ADDRESS>
+                        &lt;ADDRESS> contact information for the author of the document
 
-                        &lt;PRE> 
-                        &lt;PLAINTEXT>
-                        &lt;LISTING> 
-                        &lt;XMP>
+                        &lt;PRE> preformatted text (preserves whitespace and line breaks)
+                        &lt;PLAINTEXT> plain text (displays text as-is, without HTML formatting)
+                        &lt;LISTING> preformatted text (same as pre but in slightly different style) (obsolete now)
+                        &lt;XMP> eXternal Markup Processing (displays raw text) (obsolete now)
 
+                        &lt;KEY> keyboard input (obsolete now)
                     </pre>
                 <p></p>
-                /headings
+
+
+             
+                The above tags were the only way to customise a website in the early 1990's. Because of this, almost all websites have the same look. 
                 <p></p>
-                Lists
+                Below are some images of example websites. Note that there is no image resizing option at this time!
                 <p></p>
-                Links and navigation
+                <img src="the-worlds-first-website-1991.png">
+                <img src="telektronikk-1993.png"
                 <p></p>
-                Images and metadata
                 <p></p>
-
-
-
-                <pre>
-                    mystery characters
-                    &lt;KEY>  &lt;P>        
-                </pre> 
-                etc
-
-                <p></p>
-
-
-                \<p></p>       
-                Useful links and images to cern etc etc
-                <p></p>
-
-                <!-- Explore section -->
-                Explore:
-                neutered because it caused problems for some reason
-
-                At about the same time, Microsoft launched its Internet Explorer on August 16, 1995. This operating system played a big role in the early popularization of the World Wide Web, which consequently contributed to the further adoption of HTML.
-
-
-
             </div>
         
         </div>
     </div>
+    
 </body>
 
 </html>

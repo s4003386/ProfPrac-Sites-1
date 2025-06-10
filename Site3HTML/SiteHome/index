@@ -9,7 +9,7 @@
 
 
     </head>
-<body bgcolor="#c1c1c1" >
+<body>
     <div class="inside">
         <div class="content">
             
@@ -48,10 +48,10 @@
                 <!-- Explore section -->
                 Explore:
                 <ul>
-                    <li> <a href="/Site3HTML/SitePage1/HTML">What is HTML?</a> </li>
+                    <li> <a href="/Site3HTML/SitePage1/HTML">What is HTML? and early web design</a> </li>
                     <li> <a href="/Site3HTML/SitePage2/HTML">Origins of the World Wide Web, and how it impacted graphical design</a> </li>
-                    <li> <a href="/Site3HTML/SitePage3/HTML"> The technical limitations of early web design</a></li>
-                    <li><a href="/Site3HTML/SitePage4/HTML">The adoption of websites as an outlet for creativity </a></li>
+                    <li> <a href="/Site3HTML/SitePage3/HTML"> The technical limitations of web 1.0</a></li>
+                    <!--<li><a href="/Site3HTML/SitePage4/HTML">The adoption of websites as an outlet for creativity </a></li>-->
                     <li>'Y2K'</li>
 
 

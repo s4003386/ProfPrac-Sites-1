@@ -3,52 +3,50 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment1</title>
-    <link rel="reset" href="/reset.css" />
-    <link rel="stylesheet" href="/Style.css" />
+    <title>The popularisation of the Internet</title>
+    <link rel="reset" href="/Site3HTML/reset.css" />
+    <link rel="stylesheet" href="/Site3HTML/Style.css" />
 
+    <script src="htmlscriptidk.js" defer></script>
 
     </head>
-<body bgcolor="#c1c1c1" >
+<body>
     <div class="inside">
-        <div class="content">
+        <div class="content_site3">
+
             
+        <div class="Site3_Titlebox">
+             <h1>The popularisation of the Internet</h1>
+        </div>
+        
+        <div class="Site3_Linksbox">
+            pipipip neoooo img
+        </div>
     
-            <h1>
-        <div class="Eggbox"> Welcome to the World Wide Web </div>
-        
-            </h1>
-                <div class="line_thing">
-             <svg style="width:100%; height:100%;">
-             <line x1="0%" y1="0%" x2="0%" y2="100%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
-        
-             </svg>
-                </div>
-                <div class="line_thing2">
-            <svg  style="width:100%; height:100%;">
-            <line x1="0%" y1="0%" x2="100%" y2="0%" style="stroke:rgb(0, 0, 0);stroke-width:3" />
+        <div class="Site3_Boxbox1">
+            <div class="HomeSection" id="HomeSection">
+                    <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
+            </div> <p></p>
             
-          </svg>
-                </div>
-            <img src="/Image/Water1crispysmall.bmp" width="500">
-    
-            <div class="Eggbox2">
-            This is an HTML site created by ShapeLab to demonstrate how web design was done in the time just after the World Wide Web was made public. This style of website was common from 1991 up to around 2004 where more stringent design conventions began developing. 
+            By the early 2000's years, the internet had finally become a household name. It was no longer just a tool for researchers and academics, but a platform for creativity, communication, and commerce. Personal websites, blogs and forums became widely popular as the adoption of the internet across the globe continued. 
+            <p></p> 
+            For those familiar with new internet terms, the design style of this era would largely fall into the 'webcore' definition. The distinct characteristics of this style include the use of bright colours (as most sites were made by ameatures to design) and flashy gifs such as what you see now. 
             <br>
-            SiteSymphony
-            <br>
-
-            talk about the actual specifics of what could or could not be displayed. 
+        
 
 
-            Explore:
-            <ul>
-                <li> <a href="http://127.0.0.1:3000/SiteColour/HTML">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
-                <li>The technical limitations of early web design</li>
-                <li>The adoption of websites as an outlet for creativity</li>
-                <li>'Y2K'</li>
-            </ul>
-            </div>
+
+            <h4>Adobe flash player</h4>
+            It is hard to understate the impact that Adobe Flash Player had on web design. It was a platform that allowed for the creation of interactive content, animations, and games, which were not possible with HTML alone. This combined with the popularisation of personal blogs meant that artists and other creatives were picking up web design as a real creative outlet. Although it released in 1996, it was not until the early 2000's that it became more adopted by other creatives. 
+            <p></p>
+            Games on the web also started becoming more popular with Adobe Flash Player. You might recodnise the early popularisation of sites such as Newgrounds, then later Kongregate and Armorgames. These sites would host games made in flash, and would allow users to play them for free. This was a major shift in the way that people interacted with the web, as it allowed for immersive worlds and experiences to be readily available for anyone with a web browser to play. 
+            
+            <p>
+            and for those interested in more, here is a CreuCat Blog (A blog that has been active since the 2000s!!) post on the history of their site: <a href="https://www.creucat.com/post/the-2000-s-bloggers-part-1"> Blog here</a>
+
+            </p>
+
+        </div>
         
         </div>
         
