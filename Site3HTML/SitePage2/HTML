@@ -3,7 +3,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment1</title>
+    <title>The beggining of the web designer</title>
     <link rel="reset" href="/reset.css" />
     <link rel="stylesheet" href="/Site3HTML/Style.css" />
     <script src="s2script.js"></script>
@@ -27,10 +27,10 @@
     
             
         <div class="Site2_LeftBox1"> 
-            <h1>Development and popularisation of the Web</h1> 
+            <h1>The beggining of the web designer</h1> 
             <br>
                 <div class="HomeSection" id="HomeSection">
-                     <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
+                     <a href="/Site3HTML/SiteHome/index">Home</a> > The beggining of the web designer (you are here)
                 </div> <p></p>
             <br>
                 In the years since, HTML as a language grew to develop several new key features, such as the ability to display images, video, and other media. This would lead to the development of more complex websites that could be used for a variety of purposes, from personal blogs to e-commerce sites. 8 bit colour was also fairly common, as monitors could finally display more than just black and white. Despite this, the designs of websites were still fairly simple due to the speed of the internet, and the limitations of the technology. 
@@ -44,13 +44,7 @@
                 This era of the internet would later be named web 1.0, where most websites were only connected by hyperlinks, and who's users were majority researchers, large companies, and some hobbyists. Despite this, the role of the 'web designer' was born in the form of the 'web master'. Of course, later this role split into several different ones as designs became more complicated. 
                 <br>
                 <p></p>
-                Explore:
-                <ul>
-                    <li> <a href="url">link text</a> Origins of the World Wide Web, and how it impacted graphical design</li>
-                    <li>The technical limitations of early web design</li>
-                    <li>The adoption of websites as an outlet for creativity</li>
-                    <li>'Y2K'</li>
-                </ul>
+
         </div>
 
         <div class="Site2_RightBox1">

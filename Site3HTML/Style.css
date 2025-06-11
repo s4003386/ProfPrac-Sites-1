@@ -199,7 +199,7 @@ body {
     margin-top: 5%;
     background-color: #c1c1c1;
     width: 500px;
-    height: 50px;
+    height: 70px;
     display: flex;              
     align-items: center;        
     justify-content: center;   
@@ -208,17 +208,78 @@ body {
 
 .Site3_Linksbox{
     position: absolute;
-    margin-top: 12%;
+    margin: 15% 5% 0 5%;
     background-color: #c1c1c1;
-    width: 500px;
+    width: 200px;
+    height: 400px;
+    padding: 3% 3% 3% 3%;
+}
+
+.Site3_NeoBox{
+    position: absolute;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;   
+    text-align: center;
+    margin: 650px 5% 0% 5%;
+    background-color: #c1c1c1;
+    width: 200px;
+    height: 200px;
+    padding: 3% 3% 3% 3%;
+}
+
+.Site3_feeeesh{
+    position: absolute;
+    display: flex;              
+    align-items: center;        
+    justify-content: center;   
+    text-align: center;
+    margin: 950px 5% 0% 5%;
+
+    width: 200px;
+    height: 200px;
+    padding: 3% 3% 3% 3%;
 }
 
 .Site3_Boxbox1{
     position: absolute;
     background-color: #c1c1c1;
-    margin: 12% 5% 0 5%;
-    padding: 5% 5% 5% 5%;
-    width: 60%;
+    margin: 15% 40% 0 40%;
+    padding: 3% 3% 3% 3%;
+    width: 50%;
+}
+
+.Site3_Imagebox1{
+    position: absolute;
+    flex-direction: row;
+    background-color: #c1c1c1;
+    margin: 450px 40% 0 40%;
+    padding: 3% 3% 3% 3%;
+    width: 50%;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.image-grid img {
+    width: 200px;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.Site3_Boxbox2{
+    position: absolute;
+    background-color: #c1c1c1;
+    margin: 1050px 40% 0 40%;
+    padding: 3% 3% 3% 3%;
+    width: 50%;
 }
 
 /* Site Page 4 styling */

@@ -14,39 +14,86 @@
     <div class="inside">
         <div class="content_site3">
 
+                
+            <div class="Site3_Titlebox">
+                <h1>The popularisation of the Internet</h1>
+            </div>
             
-        <div class="Site3_Titlebox">
-             <h1>The popularisation of the Internet</h1>
-        </div>
-        
-        <div class="Site3_Linksbox">
-            pipipip neoooo img
-        </div>
+            <div class="Site3_Linksbox">
+                
+                
+                <h3>Navigation</h3>
+
+                <div class="HomeSection" id="HomeSection">
+                    <a href="/Site3HTML/SiteHome/index">Home</a> > The popularisation of the Internet (you are here)
+                </div> <p></p>
+
+                <ul>
+                    <li> <a href="/Site3HTML/SitePage1/HTML">What is HTML? and early web design</a> </li>
+                    <li> <a href="/Site3HTML/SitePage2/HTML">Origins of the World Wide Web, and how it impacted graphical design</a> </li>
+                    <li> <a href="/Site3HTML/SitePage3/HTML"> The technical limitations of web 1.0</a></li>
+                    <!--<li><a href="/Site3HTML/SitePage4/HTML">The adoption of websites as an outlet for creativity </a></li>-->
+                </ul>
+            </div>
+
+            <div class="Site3_NeoBox">
+                <img src="/Site3HTML/SitePage3/NeoEmote/neoemote1.png" style="width: 150px; height: 150px;" alt="Neo from the Matrix" class="NeoImage">
+                <br>
+                click me!!
+            </div>
+
+            <div class="Site3_feeeesh">
+                <img src="/Site3HTML/SitePage3/Illustration8 fish.png" alt="fish" style="width: 100%; height: auto; image-rendering: pixelated;">
     
-        <div class="Site3_Boxbox1">
-            <div class="HomeSection" id="HomeSection">
-                    <a href="/Site3HTML/SiteHome/index">Home</a> > What Is HTML? (you are here)
-            </div> <p></p>
-            
-            By the early 2000's years, the internet had finally become a household name. It was no longer just a tool for researchers and academics, but a platform for creativity, communication, and commerce. Personal websites, blogs and forums became widely popular as the adoption of the internet across the globe continued. 
-            <p></p> 
-            For those familiar with new internet terms, the design style of this era would largely fall into the 'webcore' definition. The distinct characteristics of this style include the use of bright colours (as most sites were made by ameatures to design) and flashy gifs such as what you see now. 
-            <br>
+            </div>
+
+
+
+            <!--right side content-->
+        
+            <div class="Site3_Boxbox1">
+
+                
+                By the early 2000's years, the internet had finally become a household name. As computer technology rapidly improved and became cheaper, it no longer was just a tool for researchers and academics, but a platform for creativity, communication, and commerce. Personal websites, blogs and forums became widely popular as the adoption of the internet across the globe continued. 
+                <p></p> 
+                For those familiar with new internet terms, the design style of this era would largely fall into the 'webcore' definition. The distinct characteristics of this style include the use of bright colours (as most sites were made by ameatures to design) and flashy gifs such as what you see now. 
+                <br>
+
+            </div>
+
+            <div class="Site3_Imagebox1">
+                  <div class="image-grid">
+                        <img src="/Site3HTML/SitePage3/douglas-arthur-2002.png" alt="Image 1">
+                        <img src="/Site3HTML/SitePage3/cubadust-2004.png" alt="Image 2">
+                        <img src="/Site3HTML/SitePage3/submethod-2001.png" alt="Image 3">
+                        <img src="/Site3HTML/SitePage3/Screenshot 2025-06-10 134633.png" alt="Image 4">
+                    </div>
+                
+                <p></p>
+                Example of 2000's web design
+                <p></p>
+                (In order left to right) douglas-arthur-2002, cubadust-2004, submethod-2001, and Jerry C cat homepage (date unknown).
+            </div>
+
+            <div class="Site3_Boxbox2">
+                <h4>Adobe flash player</h4>
+
+                It is hard to understate the impact that Adobe Flash Player had on web design. It was a platform that allowed for the creation of interactive content, animations, and games, which were not possible with HTML alone. This combined with the popularisation of personal blogs meant that artists and other creatives were picking up web design as a real creative outlet. Although it released in 1996, it was not until the early 2000's that it became more adopted by other creatives. 
+                <p></p>
+                Games on the web also started becoming more popular with Adobe Flash Player. You might recodnise the early popularisation of sites such as Newgrounds, then later Kongregate and Armorgames. These sites would host games made in flash, and would allow users to play them for free. This was a major shift in the way that people interacted with the web, as it allowed for immersive worlds and experiences to be readily available for anyone with a web browser to play. 
+                
+                <p>
+                and for those interested in more, here is a CreuCat Blog (A blog that has been active since the 2000s!!) post on the history of their site: <a href="https://www.creucat.com/post/the-2000-s-bloggers-part-1"> Blog here</a>
+
+                </p>
+
+                <img src="/Site3HTML/SitePage3/Newgrounds_1995.webp" style="width: 400px;">
+                <p></p>
+                Newgrounds, 1995
+            </div>
         
 
-
-
-            <h4>Adobe flash player</h4>
-            It is hard to understate the impact that Adobe Flash Player had on web design. It was a platform that allowed for the creation of interactive content, animations, and games, which were not possible with HTML alone. This combined with the popularisation of personal blogs meant that artists and other creatives were picking up web design as a real creative outlet. Although it released in 1996, it was not until the early 2000's that it became more adopted by other creatives. 
-            <p></p>
-            Games on the web also started becoming more popular with Adobe Flash Player. You might recodnise the early popularisation of sites such as Newgrounds, then later Kongregate and Armorgames. These sites would host games made in flash, and would allow users to play them for free. This was a major shift in the way that people interacted with the web, as it allowed for immersive worlds and experiences to be readily available for anyone with a web browser to play. 
             
-            <p>
-            and for those interested in more, here is a CreuCat Blog (A blog that has been active since the 2000s!!) post on the history of their site: <a href="https://www.creucat.com/post/the-2000-s-bloggers-part-1"> Blog here</a>
-
-            </p>
-
-        </div>
         
         </div>
         
